@@ -34,16 +34,22 @@
     background-color: #22c3aa;
 }
 .baseinfo-page-content{
-	position: absolute;
+    width: 370px;
+    position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -90px;
+    margin-left: -185px;
     margin-top: -250px;
 }
 .baseinfo-page-content h1{
 	text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
     color: white;
     font-size: 5em;
+}
+.baseinfo-page-content p{
+	margin: 1em 0 0.25em 0;
+    color: #aee2d9;
+    font-size: 2em;
 }
 #baseinfo-page img{
 	width: 180px;
