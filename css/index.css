@@ -1,0 +1,51 @@
+@import url(init.css);
+#float-nav{
+	position: fixed;
+    top: 50%;
+    margin-top: -40px;
+}
+#float-nav span{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9999;
+}
+.bt1{
+	top:0;
+}
+.bt2{
+	top:15px;
+}
+.bt3{
+	top:30px;
+}
+.bt4{
+	top:45px;
+}
+#float-nav li{
+	list-style: none;
+}
+#baseinfo-page{
+    height: 1012px;
+    text-align: center;
+    background-color: #22c3aa;
+}
+.baseinfo-page-content{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -90px;
+    margin-top: -250px;
+}
+.baseinfo-page-content h1{
+	text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
+    color: white;
+    font-size: 5em;
+}
+#baseinfo-page img{
+	width: 180px;
+	border-radius: 50%;
+}
