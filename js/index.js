@@ -14,9 +14,22 @@ $(function(){
 		}
     	return false;//不要这句会有点卡顿
 	});
-	$(document).scroll(function(){
-		var high = $(document).scrollTop();
-		var index = parseInt(high/1012)+1;
+	var num = 0;
+/*$(document)对整个网页文档进行操作 
+monsewheel是鼠标滚动方法
+mousewheel(event n){} n代表滚动方向 向上为1 向下为-1*/
+
+$(document).mousewheel(function(event,n){
+    num=num-n;               
+    if(num<0){
+        num=0;      //页面在第一页时不可再向上滑
+    }
+    if(num>4){
+        num=4;  //页面在最后一页时不可再向下滑
+    }
+            //屏幕整屏滚动  section元素相对自身移动
+    $('section').stop().animate({'marginTop':-1012*num},400);
+		var index = parseInt(Math.abs(num))+1;
     	for (var i = 0; i <$bt.length; i++) {
     		if($bt[i].getAttribute('index') == index){
     			$bt[i].className = 'bt'+ (i+1) + ' ' + 'on';
@@ -24,7 +37,10 @@ $(function(){
     			$bt[i].className = 'bt' + (i+1);	
     		}
     	}
-	});
+    
+});
+	// $(document).scroll(function(){
+	// });
 
 	// $("#block-nav").css("z-index", 1);
 	// $("#block-nav").navFixed();
@@ -42,11 +58,7 @@ $(window).resize(function(){
 	}else{
 		$('#float-nav').show();
 	}
-	// $('.blockTitle').stop().fadeIn("normal").animate({
-	// 	"top" : ($(window).height() - $('.blockTitle').outerHeight())/2
-	// },500); 
-	// $("#block-wantMore").css("height", $(window).height()-52 + "px");
-	// $('#block-wantMore>p').css("top", ($("#block-wantMore").outerHeight(true) - $('#block-wantMore>p').outerHeight())/2 + "px"); 
 });
+
 
 

@@ -1,8 +1,12 @@
 @import url(init.css);
+body{
+	overflow: hidden;
+}
 #float-nav{
 	position: fixed;
     top: 50%;
     margin-top: -40px;
+    z-index: 9999;
 }
 #float-nav span{
     width: 6px;
@@ -11,10 +15,13 @@
     background: rgba(0, 0, 0, 0);
     border-radius: 50%;
     position: absolute;
-    z-index: 9999;
+
+}
+section{
+	position: absolute;
 }
 .on{
-	background: red!important;
+	background: black!important;
 }
 .bt1{
 	top:0;
@@ -32,6 +39,7 @@
 	list-style: none;
 }
 #baseinfo-page{
+	width: 100%;
     height: 1012px;
     text-align: center;
     background-color: #22c3aa;
@@ -65,4 +73,11 @@
 #baseinfo-page img{
 	width: 180px;
 	border-radius: 50%;
+}
+
+#area1{
+	top: 1012px;
+}
+#area2{
+	top: 2024px;
 }
