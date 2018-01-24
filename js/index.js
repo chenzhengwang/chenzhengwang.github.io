@@ -28,7 +28,7 @@ $(document).mousewheel(function(event,n){
         num=4;  //页面在最后一页时不可再向下滑
     }
             //屏幕整屏滚动  section元素相对自身移动
-    $('section').stop().animate({'marginTop':-1012*num},400);
+    $('section').stop().animate({'marginTop':-($(window).height())*num},400);
 		var index = parseInt(Math.abs(num))+1;
     	for (var i = 0; i <$bt.length; i++) {
     		if($bt[i].getAttribute('index') == index){
