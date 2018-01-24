@@ -58,6 +58,11 @@ $(window).resize(function(){
 	}else{
 		$('#float-nav').show();
 	}
+	if($(window).height()<1024){
+		$('#area1').css('top',$(window).height());
+		$('#area2').css('top',2*$(window).height());
+		$('#area3').css('top',3*$(window).height());
+	}
 });
 
 
