@@ -77,7 +77,92 @@ section{
 
 #project-page{
 	top: 1012px;
+    height: 100%;
+    background-color: #22c3aa;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+#project-page b{
+	color: #aee2d9;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+#project-page h1{
+	text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
+    color: white;
+    font-size: 5em;
+}
+#project-page a{
+	display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #008a75;
+    padding: 10px;
+}
+#project-page a img{
+	width: 90px;
+	height: 90px;
+}
+#project-page a img:hover{
+	opacity: 0.5;
+}
 }
 #area2{
 	top: 2024px;
+	overflow: hidden;
 }
+.left{
+	float: left;
+    text-align: center;
+    width: 40%;
+    margin-left: 10%;
+}
+.right{
+	float: right;
+	text-align: center;
+    width: 40%;
+    margin-right: 10%;
+}
+.left-on-name{
+	float: left;
+}
+.left-on-desc{
+	margin-left: 25%;
+    text-align: left;
+}
+.left-on-desc p{
+	color: #008a75;
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width :1024px){
+.left{
+   		text-align: center;
+    	width: 80%;
+    	margin-left: 10%;
+	}
+.right{
+	float: left;
+	text-align: center;
+    margin-left: 10%;
+    width: 80%;
+}
+}
+@media only screen and (max-width :640px){}
+@media only screen and (max-width :414px){
+.left-on-name{
+	float: unset;
+}
+.left-on-desc{
+	text-align: left;
+    margin-left: 0;
+}
+.left-on-desc p {
+     padding-top: 0; 
+}
+}
+@media only screen and (max-width :375px){}
+@media only screen and (max-width :360px){}
