@@ -22,6 +22,7 @@ body{
 }
 section{
 	position: absolute;
+	height: 1012px;
 }
 .on{
 	background: black!important;
@@ -43,7 +44,6 @@ section{
 }
 #baseinfo-page{
 	width: 100%;
-    height: 1012px;
     text-align: center;
 }
 .baseinfo-page-content{
@@ -78,7 +78,6 @@ section{
 }
 
 #project-page{
-	top: 1012px;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -94,7 +93,27 @@ section{
     color: white;
     font-size: 5em;
 }
-#project-page a{
+#togit{
+	color: #aee2d9;
+    font-size: 1.5em;
+}
+#togit a{
+	color: #9f3;
+}
+#togit a:hover{
+	text-decoration: none;
+    transition: 0.5s;
+    color: #008a75;
+}
+.left a{
+	display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #008a75;
+    padding: 10px;
+}
+.right a{
 	display: inline-block;
     width: 90px;
     height: 90px;
@@ -109,11 +128,6 @@ section{
 #project-page a img:hover{
 	opacity: 0.5;
 }
-}
-#area2{
-	top: 2024px;
-	overflow: hidden;
-}
 .left{
 	float: left;
     text-align: center;
@@ -124,7 +138,7 @@ section{
 	float: right;
 	text-align: center;
     width: 40%;
-    margin-right: 10%;
+    margin-right: 2%;
 }
 .left-on-name{
 	float: left;
@@ -138,12 +152,36 @@ section{
     font-size: 2em;
     padding-top: 20px;
 }
-
+#skill-page{
+	top: 2024px;
+    padding-top: 10%;
+	width: 100%;
+    text-align: center;
+}
+#skill-page h1{
+	text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
+    color: white;
+    font-size: 5em;
+}
+#skill-page span{
+    background-color: #096254;
+    color: #aee2d9;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 7px;
+    margin-bottom: 11px;
+    font-size: 1.5em;
+}
+#edu-page{
+	top: 3036px;
+	width: 100%;
+}
 @media only screen and (max-width :1024px){
 .left{
-   		text-align: center;
-    	width: 80%;
-    	margin-left: 10%;
+   	text-align: center;
+    width: 80%;
+    margin-left: 10%;
 	}
 .right{
 	float: left;

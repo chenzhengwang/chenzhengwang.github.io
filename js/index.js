@@ -60,7 +60,9 @@ $(window).resize(function(){
 	}
 	if($(window).height()<1367){
 		$('#project-page').css('top',$(window).height());
-		$('#area2').css('top',2*$(window).height());
+		$('#skill-page').css('top',2*$(window).height());
+		$('#area3').css('top',3*$(window).height());
+		$('#area3').css('top',3*$(window).height());
 		$('#area3').css('top',3*$(window).height());
 	}
 });
