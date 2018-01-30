@@ -5,6 +5,11 @@ html{
 body{
 	overflow: hidden;
 }
+body h1{
+	text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
+    color: white;
+    font-size: 5em;
+}
 #float-nav{
 	position: fixed;
     top: 50%;
@@ -54,11 +59,6 @@ section{
     margin-left: -185px;
     margin-top: -250px;
 }
-.baseinfo-page-content h1{
-	text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
-    color: white;
-    font-size: 5em;
-}
 .baseinfo-page-content p{
 	margin: 1em 0 0.25em 0;
     color: #aee2d9;
@@ -87,11 +87,6 @@ section{
 	color: #aee2d9;
     font-size: 1.5em;
     margin: 0.5em 0;
-}
-#project-page h1{
-	text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
-    color: white;
-    font-size: 5em;
 }
 #togit{
 	color: #aee2d9;
@@ -158,11 +153,6 @@ section{
 	width: 100%;
     text-align: center;
 }
-#skill-page h1{
-	text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
-    color: white;
-    font-size: 5em;
-}
 #skill-page span{
     background-color: #096254;
     color: #aee2d9;
@@ -176,6 +166,19 @@ section{
 #edu-page{
 	top: 3036px;
 	width: 100%;
+	text-align: center;
+	padding-top: 10%;
+}
+#edu-page h4{
+    font-size: 2em;
+    margin: 0 0 0.1em 0;
+    color: white;
+    margin-top: 0;
+}
+#edu-page p{
+    color: #aee2d9;
+    font-size: 1.5em;
+    margin: 0.5em 0;
 }
 @media only screen and (max-width :1024px){
 .left{
