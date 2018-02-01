@@ -180,7 +180,7 @@ section{
     font-size: 1.5em;
     margin: 0.5em 0;
 }
-@media only screen and (max-width :1024px){
+@media only screen and (max-width :640px){
 .left{
    	text-align: center;
     width: 80%;
@@ -193,7 +193,6 @@ section{
     width: 80%;
 }
 }
-@media only screen and (max-width :640px){}
 @media only screen and (max-width :414px){
 .left-on-name{
 	float: unset;
