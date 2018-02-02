@@ -58,14 +58,24 @@ $(window).resize(function(){
 	}else{
 		$('#float-nav').show();
 	}
-	if($(window).height()<1367){
+	if($(window).width()>767){
 		$('#project-page').css('top',$(window).height());
 		$('#skill-page').css('top',2*$(window).height());
-		$('#area3').css('top',3*$(window).height());
-		$('#area3').css('top',3*$(window).height());
-		$('#area3').css('top',3*$(window).height());
+		$('#edu-page').css('top',3*$(window).height());
+		// $('#area3').css('top',3*$(window).height());
+		// $('#area3').css('top',3*$(window).height());else{}
+	}else{
+		$(".baseinfo-page-content").css({
+			'width':"370px",
+			'position':"unset",
+			'top':"0",
+			'left':"0",
+			'margin':"0 auto",
+			'margin-top':"20%",
+		});
+		$('section').css({
+			"position":"unset",
+			"margin-top":"0px",
+		});
 	}
 });
-
-
-

@@ -274,11 +274,11 @@ img{
 }
 .test8:hover .line2{
 	transition: all 0.5s;
-	transform: rotate(45deg);
+	transform: rotate(30deg);
 }
 .test8:hover .line1{
 	transition: all 0.5s;
-	transform: rotate(-45deg);
+	transform: rotate(-30deg);
 }
 .test8:hover img{
 	transition: all 0.5s;
