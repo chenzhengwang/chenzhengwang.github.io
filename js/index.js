@@ -76,6 +76,7 @@ $(window).resize(function(){
 		$('section').css({
 			"position":"unset",
 			"margin-top":"0px",
+			"height":"auto",
 		});
 	}
 });
