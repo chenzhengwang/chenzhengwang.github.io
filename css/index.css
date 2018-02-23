@@ -44,6 +44,12 @@ section{
 .bt4{
 	top:45px;
 }
+.bt5{
+	top:60px;
+}
+.bt6{
+	top:75px;
+}
 #float-nav li{
 	list-style: none;
 }
@@ -81,7 +87,9 @@ section{
     height: 100%;
     width: 100%;
     text-align: center;
-    padding-top: 10%;
+}
+#project-page h1{
+	margin-top: 10%;
 }
 #project-page b{
 	color: #aee2d9;
@@ -149,9 +157,11 @@ section{
 }
 #skill-page{
 	top: 2024px;
-    padding-top: 10%;
 	width: 100%;
     text-align: center;
+}
+#skill-page h1{
+	margin-top: 10%;
 }
 #skill-page span{
     background-color: #096254;
@@ -167,7 +177,9 @@ section{
 	top: 3036px;
 	width: 100%;
 	text-align: center;
-	padding-top: 10%;
+}
+#edu-page h1{
+	margin-top: 10%;
 }
 #edu-page h4{
     font-size: 2em;
@@ -179,6 +191,64 @@ section{
     color: #aee2d9;
     font-size: 1.5em;
     margin: 0.5em 0;
+}
+#job-page{
+	top: 4048px;
+	width: 100%;
+	text-align: center;
+}
+#job-page h1{
+	margin-top: 10%;
+}
+#job-page a{
+	font-size: 2em;
+    margin: 0 0 0.1em 0;
+    color: white;
+    margin-top: 0;
+    text-decoration: none;
+}
+#job-page a:hover{
+	text-decoration: none;
+    transition: 0.5s;
+	color: #9f3;
+}
+#job-page p{	
+    color: #aee2d9;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+#more-page{
+	top: 5060px;
+	width: 100%;
+	text-align: center;
+}
+#more-page h1{
+	margin-top: 10%;
+}
+#more-page p {
+    color: #aee2d9;
+    font-size: 2.0em;
+    margin: 0.5em 0;
+}
+#more-page span{	
+	color: #008a75;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#more-page span:hover{
+	text-decoration: none;
+    transition: 0.5s;
+	color: #9f3;
+}
+#more-page a{
+	color: #9f3;
+    text-decoration: none;
+    font-size: 3.2em;
+    font-weight: 900;
+}
+#more-page a:hover{
+	color: #008a75;
+	transition: 0.5s;
 }
 @media only screen and (max-width :640px){
 .left{

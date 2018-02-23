@@ -24,8 +24,8 @@ $(document).mousewheel(function(event,n){
     if(num<0){
         num=0;      //页面在第一页时不可再向上滑
     }
-    if(num>4){
-        num=4;  //页面在最后一页时不可再向下滑
+    if(num>6){
+        num=6;  //页面在最后一页时不可再向下滑
     }
             //屏幕整屏滚动  section元素相对自身移动
     $('section').stop().animate({'marginTop':-($(window).height())*num},400);
@@ -62,8 +62,8 @@ $(window).resize(function(){
 		$('#project-page').css('top',$(window).height());
 		$('#skill-page').css('top',2*$(window).height());
 		$('#edu-page').css('top',3*$(window).height());
-		// $('#area3').css('top',3*$(window).height());
-		// $('#area3').css('top',3*$(window).height());else{}
+		$('#job-page').css('top',4*$(window).height());
+		$('#more-page').css('top',5*$(window).height());
 	}else{
 		$(".baseinfo-page-content").css({
 			'width':"370px",
