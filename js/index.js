@@ -24,8 +24,8 @@ $(document).mousewheel(function(event,n){
     if(num<0){
         num=0;      //页面在第一页时不可再向上滑
     }
-    if(num>6){
-        num=6;  //页面在最后一页时不可再向下滑
+    if(num>5){
+        num=5;  //页面在最后一页时不可再向下滑
     }
             //屏幕整屏滚动  section元素相对自身移动
     $('section').stop().animate({'marginTop':-($(window).height())*num},400);
