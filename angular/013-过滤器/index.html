@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="firstController">
+			<!-- 123,456,789 -->
+			<p>{{123456789 | number}}</p>
+			<!-- 12,345.679 -->
+			<p>{{12345.6789 | number:3}}</p>
+			<!-- $999,999.00 -->
+			<p>{{999999 | currency}}</p>
+			<!-- ￥999,999.00 -->
+			<p>{{999999 | currency:'￥'}}</p>
+			<!-- Jan 2, 1970 -->
+			<p>{{129131313 | date}}</p>
+			<!-- Mar 8, 2018 11:16:55 AM -->
+			<p>{{today | date:'medium'}}</p>
+			<!-- 3/8/18 11:16 AM -->
+			<p>{{today | date:'short'}}</p>
+			<!-- Thursday, March 8, 2018 -->
+			<p>{{today | date:'fullDate'}}</p>
+			<!-- March 8, 2018 -->
+			<p>{{today | date:'longDate'}}</p>
+			<!-- Mar 8, 2018 -->
+			<p>{{today | date:'mediumDate'}}</p>
+			<!-- 3/8/18 -->
+			<p>{{today | date:'shortDate'}}</p>
+			<!-- 11:16:55 AM -->
+			<p>{{today | date:'mediumTime'}}</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="../libs/angular.min.js"></script>
+	<script type="text/javascript" src="app/index.js"></script>
+</body>
+</html>

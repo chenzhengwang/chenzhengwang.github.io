@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="firstController">
+			<!-- [1,2,3,44,584] -->
+			<p>{{[1,2,3,44,584,6,7] | limitTo:5}}</p>
+<!-- 		[3,44,584,6,7]
+			加 - 表示从后面开始算 
+-->
+			<p>{{[1,2,3,44,584,6,7] | limitTo:-5}}</p>
+			<!-- awaa -->
+			<p>{{message | lowercase}}</p>
+			<!-- AWAA -->
+			<p>{{message | uppercase}}</p>
+			<!-- [{"name":"上海","py":"shanghai"}] -->
+			<p>{{city | filter:'上海'}}</p>
+			<!-- [] -->
+			<p>{{city | filter:'name'}}</p>
+			<!-- [{"name":"上海","py":"shanghai"},{"name":"北京","py":"beijing"}]-->
+			<p>{{city | filter:'g'}}</p>
+			<!-- [{"name":"北京","py":"beijing"},{"name":"上海","py":"shanghai"},{"name":"四川","py":"sichuan"}]
+			排序，默认是正序 a → z
+			-->			
+			<p>{{city | orderBy:'py'}}</p>
+			<!-- [{"name":"四川","py":"sichuan"},{"name":"上海","py":"shanghai"},{"name":"北京","py":"beijing"}] 
+			排序，默认是正序 a → z，加 “-” 就变成反响排序了 z → a
+			-->			
+			<p>{{city | orderBy:'-py'}}</p>			
+		</div>
+	</div>
+	<script type="text/javascript" src="../libs/angular.min.js"></script>
+	<script type="text/javascript" src="app/index.js"></script>
+</body>
+</html>

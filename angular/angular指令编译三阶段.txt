@@ -1,0 +1,11 @@
+1.标准化浏览器API转化
+
+将HTML转化成DOM，所以自定义的html标签必须符合html的格式
+
+2.angular compile
+
+搜索匹配的directive，priority排序，并执行directive上的compile方法
+
+3.angular link
+
+执行directive上的link方法，进行scope绑定及事件绑定

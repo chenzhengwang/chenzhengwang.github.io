@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.blue{
+		color: blue;
+	}
+
+</style>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="firstController">
+			<button ng-click="statusChange()">切换状态</button>
+			<p>{{status}}</p>
+			<div ng-style="defaultStyle">
+				ng-style
+			</div>
+			<div ng-class="{blue : status}">
+				<h1>无言独上西楼</h1>
+				<h2>月如钩</h2>
+				<h3>寂寞梧桐深院锁清秋</h3>
+			</div>
+		</div>
+		<ul ng-switch on="status">
+			<li ng-switch-when="true">
+				true
+			</li>
+			<li  ng-switch-when="false">
+				false	
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../libs/angular.min.js"></script>
+	<script type="text/javascript" src="app/index.js"></script>
+</body>
+</html>
